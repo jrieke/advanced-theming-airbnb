@@ -23,5 +23,5 @@ font = "AirbnbCereal"
 baseFontSize = 15
 
 [[theme.fontFaces]]
-url = "http://localhost:8502/app/static/cereal/AirbnbCereal_W_Bk.otf"
+url = "app/static/cereal/AirbnbCereal_W_Bk.otf"
 family = "AirbnbCereal"
