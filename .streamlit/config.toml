@@ -3,14 +3,6 @@ enableStaticServing = true
 
 [theme]
 # AirBnB
-# What's missing/doesn't look great:
-# - ✅ showSidebarBoder
-# - large elements are too rounded, maybe we reduce their max border radius a bit?
-# - ✅ code background is not visible because it's white. should be gray, e.g. #F7F7F7 (that's what AirBnB uses on their website as a callout background)
-# - dataframe border is a bit on the light side, but it's still ok here IMO
-# - active page background should be the gray from their website (#F7F7F7)
-# - ✅ they mentioned they want to set font sizes/weights for different header levels
-# - hover backgrounds are not visible because secondaryBackground is white, should be the gray that they also use on their website for hovering,  #F7F7F7
 primaryColor = "#FF395D"
 backgroundColor = "#ffffff"
 secondaryBackgroundColor = "#ffffff"
@@ -18,7 +10,7 @@ textColor = "#222222"
 linkColor = "#222222"
 borderColor = "#DDDDDD"
 showBorderAroundInputs = true
-roundness = 1
+roundness = 0.333
 font = "AirbnbCereal"
 baseFontSize = 15
 
