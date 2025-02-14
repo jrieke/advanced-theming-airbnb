@@ -26,4 +26,3 @@ baseFontSize = 15
 url = "http://localhost:8502/app/static/cereal/AirbnbCereal_W_Bk.otf"
 family = "AirbnbCereal"
 style = "normal"
-
