@@ -9,6 +9,7 @@ import pydeck as pdk
 import streamlit as st
 
 st.set_page_config("AirBnB theme", "🎈", initial_sidebar_state="collapsed")
+st.logo("https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg")
 st.title("AirBnB theme")
 
 
