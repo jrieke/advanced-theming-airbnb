@@ -13,35 +13,46 @@ st.logo("https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9
 st.title("AirBnB theme")
 
 if st.checkbox("Enable CSS hacks", True):
-    st.html(
-        """
-        <style>
-        .stSidebar > div:nth-of-type(2) > div > div {
+    sidebarSeparator = True
+
+    codeBackgroundColor = "#F7F7F7"
+
+    titleFontSize = "32px"
+    titleFontWeight = "500"
+    headerFontSize = "22px"
+    headerFontWeight = "500"
+    subheaderFontSize = "18px"
+    subheaderFontWeight = "500"
+
+    style = ""
+    if sidebarSeparator:
+        style += """
+        .stSidebar > div:last-of-type > div > div {
             background-image: linear-gradient(to right, transparent 20%, rgba(34, 34, 34, 0.3) 28%, transparent 36%);
-        }
+        }"""
+
+    style += f"""
+        .stCode pre {{
+            background-color: {codeBackgroundColor};
+        }}
         
-        .stCode pre {
-            background-color: #F7F7F7;
-        }
+        h1 {{
+            font-size: {titleFontSize} !important;
+            font-weight: {titleFontWeight} !important;
+        }}
         
-        h1 {
-            font-size: 32px !important;
-            font-weight: 500 !important;
-        }
+        h2 {{
+            font-size: {headerFontSize} !important;
+            font-weight: {headerFontWeight} !important;
+        }}
         
-        h2 {
-            font-size: 22px !important;
-            font-weight: 500 !important;
-        }
-        
-        h3 {
-            font-size: 18px !important;
-            font-weight: 500 !important;
-        }
-        </style>
-        """
-    )
-    
+        h3 {{
+            font-size: {subheaderFontSize} !important;
+            font-weight: {subheaderFontWeight} !important;
+        }}"""
+
+    st.html(f"<style>{style}</style>")
+
 
 def page1():
     pass
