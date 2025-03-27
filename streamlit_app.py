@@ -13,10 +13,6 @@ st.logo("https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9
 st.title("AirBnB theme")
 
 if st.checkbox("Enable CSS hacks", True):
-    sidebarSeparator = True
-
-    codeBackgroundColor = "#F7F7F7"
-
     titleFontSize = "32px"
     titleFontWeight = "500"
     headerFontSize = "22px"
@@ -24,18 +20,7 @@ if st.checkbox("Enable CSS hacks", True):
     subheaderFontSize = "18px"
     subheaderFontWeight = "500"
 
-    style = ""
-    if sidebarSeparator:
-        style += """
-        .stSidebar > div:last-of-type > div > div {
-            background-image: linear-gradient(to right, transparent 20%, rgba(34, 34, 34, 0.3) 28%, transparent 36%);
-        }"""
-
-    style += f"""
-        .stCode pre {{
-            background-color: {codeBackgroundColor};
-        }}
-        
+    style = f"""
         h1 {{
             font-size: {titleFontSize} !important;
             font-weight: {titleFontWeight} !important;

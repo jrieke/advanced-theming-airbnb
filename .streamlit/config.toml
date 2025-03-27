@@ -2,17 +2,18 @@
 enableStaticServing = true
 
 [theme]
-# AirBnB
 primaryColor = "#FF395D"
 backgroundColor = "#ffffff"
 secondaryBackgroundColor = "#ffffff"
 textColor = "#222222"
 linkColor = "#222222"
 borderColor = "#DDDDDD"
-showBorderAroundInputs = true
-roundness = 0.333
+showWidgetBorder = true
+showSidebarBorder = true
+basRadius = "0.5rem"
 font = "AirbnbCereal"
 baseFontSize = 15
+codeBackgroundColor = "#F7F7F7"
 
 [[theme.fontFaces]]
 url = "app/static/cereal/AirbnbCereal_W_Bk.otf"
