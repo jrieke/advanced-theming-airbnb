@@ -12,32 +12,6 @@ st.set_page_config("AirBnB theme", "🏡")
 st.logo("https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg")
 st.title("AirBnB theme")
 
-if st.checkbox("Enable CSS hacks", True):
-    titleFontSize = "32px"
-    titleFontWeight = "500"
-    headerFontSize = "22px"
-    headerFontWeight = "500"
-    subheaderFontSize = "18px"
-    subheaderFontWeight = "500"
-
-    style = f"""
-        h1 {{
-            font-size: {titleFontSize} !important;
-            font-weight: {titleFontWeight} !important;
-        }}
-        
-        h2 {{
-            font-size: {headerFontSize} !important;
-            font-weight: {headerFontWeight} !important;
-        }}
-        
-        h3 {{
-            font-size: {subheaderFontSize} !important;
-            font-weight: {subheaderFontWeight} !important;
-        }}"""
-
-    st.html(f"<style>{style}</style>")
-
 
 def page1():
     pass
